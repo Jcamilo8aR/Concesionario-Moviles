@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehiculoActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:text="VEHICULO" />
+
+    <EditText
+        android:id="@+id/etplaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:hint="Placa"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etmarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Marca"
+        android:inputType="text"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etmodelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Modelo"
+        android:inputType="text" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="30dp"
+        android:text=" Activo" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btguardar"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="Guardar"
+            android:text="Guardar"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="174dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:onClick="Consultar"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Consultar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnactivar"
+            android:layout_width="174dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:onClick="activar"
+            android:text="Activar" />
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:text="Anular"
+            android:onClick="anular"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:onClick="cancelar"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnregresar"
+            android:layout_width="174dp"
+            android:layout_height="60dp"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:onClick="regresar"
+            android:text="Regresar" />
+    </LinearLayout>
+
+</LinearLayout>
